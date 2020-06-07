@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "trading-bot"
+version = "0.1.0"
+description = "crypto trading bot"
+authors = ["Aaron Arredondo Sanchez <binauralvoice@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+alpaca_trade_api = "^0.48"
+black = "^19.10b0"
+pep8 = "^1.7.1"
+tensorflow = "^2.2.0"
+keras = "^2.3.1"
+sklearn = "^0.0"
+python-dotenv = "^0.13.0"
+
+[tool.poetry.dev-dependencies]
+pycodestyle = "^2.6.0"
+black = {version = "^19.10b0", allow-prereleases = true}
+autopep8 = "^1.5.3"
+cookiecutter = "^1.7.2"
+flake8 = "^3.8.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
