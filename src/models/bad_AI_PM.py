@@ -10,7 +10,7 @@ class AIPMDevelopment:
 
     def __init__(self):
         # Read your data in and split the dependent and independent
-        data = pd.read_csv("IBM.csv")
+        data = pd.read_csv("data/interim/IBM.csv")
         X = data['Delta Close']
         y = data.drop(['Delta Close'], axis=1)
 
@@ -30,7 +30,7 @@ class AIPMDevelopment:
         # Compile the model
         network.compile(
             optimizer='rmsprop',
-            loss='bynary_crossentropy',
+            loss='binary_crossentropy',
             metrics=['accuracy']
         )
         # Train the model
